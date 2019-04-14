@@ -2,8 +2,11 @@
 #include <memory>
 #include <string>
 #include <iostream>
+#include <vector>
 
 #include <boost/property_tree/ptree.hpp>
+#include <boost/random/mersenne_twister.hpp>
+#include <boost/random/uniform_int_distribution.hpp>
 
 #include "computer.hpp"
 #include "computer_factory.hpp"
@@ -27,5 +30,10 @@ int main()
     {
         std::cout << v << std::endl;
     }
+
+    boost::random::mt19937 rng;
+    boost::random::uniform_int_distribution<> six(1,6);
+    int x = six(rng);
+
     return 0;
 }
