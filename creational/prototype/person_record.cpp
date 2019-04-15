@@ -24,4 +24,9 @@ std::unique_ptr<record> person_record::clone()
     return std::make_unique<person_record>(*this);
 }
 
+void person_record::set_id(int id)
+{
+    age_ = id;
+}
+
 } // end namespace design_patterns::creational::prototype

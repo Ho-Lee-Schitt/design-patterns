@@ -20,4 +20,5 @@ std::unique_ptr<record> record_factory::createRecord(record_type recordType)
 {
     return m_records[recordType]->clone();
 }
+
 } // end namespace design_patterns::creational::prototype

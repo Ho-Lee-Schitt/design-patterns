@@ -14,5 +14,7 @@ int main()
     record = recordFactory.createRecord(design_patterns::creational::prototype::PERSON);
     record->print();
 
+    record->set_id(20);
+
     return 0;
 }

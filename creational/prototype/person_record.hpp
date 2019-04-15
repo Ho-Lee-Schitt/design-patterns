@@ -20,6 +20,8 @@ public:
 
     std::unique_ptr<record> clone() override;
 
+    void set_id(int id) override;
+
 };
 
 } // end namespace design_patterns::creational::prototype

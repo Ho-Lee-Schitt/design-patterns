@@ -13,6 +13,7 @@ class record
 public:
     virtual ~record() {}
     virtual void print() = 0;
+    virtual void set_id(int id) {};
     virtual std::unique_ptr<record> clone() = 0;
 };
 
